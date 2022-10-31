@@ -32,7 +32,7 @@ which will simply scan a more limited range (the top nibble is fixed at 0). To r
 the previous behaviour set the NOMULTICORE macro (but ONLY if using a single core).
 
 ### Contents
---------
+
 DE2-115-Single  Single full scratchpad core, this is the simplest implementation.
 
 DE0-Nano        Uses interpolation as the full scratchpad does not fit (this is the
@@ -50,8 +50,10 @@ scripts         Mining scripts.
 
 source          Verilog source code.
 
-## Ztex and Cairnsmore CM1
 -----------------------
+
+## Ztex and Cairnsmore CM1
+
 Ports for the Ztex 1.15y and Cairnsmore CM1 quad boards are available in the experimental
 folder. Both achieve around 60kHash/sec (total for all four FPGA devices) using a single
 core and 16 threads (identical to the current ICARUS-LX150 code). A customised version of
