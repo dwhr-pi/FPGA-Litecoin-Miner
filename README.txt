@@ -1,4 +1,4 @@
-An Open Source FPGA Litecoin (scrypt) miner
+#An Open Source FPGA Litecoin (scrypt) miner
 
 This code is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
 without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
@@ -31,7 +31,7 @@ is now the default. This only affects nonce handling so its safe to use with sin
 which will simply scan a more limited range (the top nibble is fixed at 0). To revert to
 the previous behaviour set the NOMULTICORE macro (but ONLY if using a single core).
 
-Contents
+###Contents
 --------
 DE2-115-Single  Single full scratchpad core, this is the simplest implementation.
 
@@ -50,7 +50,7 @@ scripts         Mining scripts.
 
 source          Verilog source code.
 
-Ztex and Cairnsmore CM1
+##Ztex and Cairnsmore CM1
 -----------------------
 Ports for the Ztex 1.15y and Cairnsmore CM1 quad boards are available in the experimental
 folder. Both achieve around 60kHash/sec (total for all four FPGA devices) using a single
@@ -58,7 +58,7 @@ core and 16 threads (identical to the current ICARUS-LX150 code). A customised v
 cgminer 3.1.1 must be used (see experimental/Ztex-1-15y/cgminer-3.1.1 which supports both
 boards). Bitstreams are linked in the respective READMEs.
 
-Usage
+##Usage
 -----
 The Altera ports (DE0-Nano) require installation of Quartus II software. For MS Windows
 set mining pool connection details by editing scripts/config.tcl then run scripts/mine.bat
