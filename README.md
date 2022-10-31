@@ -32,18 +32,20 @@ which will simply scan a more limited range (the top nibble is fixed at 0). To r
 the previous behaviour set the NOMULTICORE macro (but ONLY if using a single core).
 
 ### Contents
-|:------------------------------------:|------------------------------------|
+
+|Need                   | Description|
+|:---------------------:|------------------------------------|
 |'Altera DE2-115-Single'|  Single full scratchpad core, this is the simplest implementation.|
-|'DE0-Nano'    |  Uses interpolation as the full scratchpad does not fit (this is the|
-|              | same as LOOKUP_GAP=2 in GPU). Test results ...|
-|              | 1.16 kHash/sec at 25Mhz (this is Fmax at 85C/Slow model)|
-|              | 2.09 kHash/sec at 45Mhz|
-|              | Fmax is 25MHz, so anything greater may not work reliably on your device.|
-|              | BEWARE the onboard psu regulators run HOT to VERY HOT. You may fry them!|
-|experimental  | New code, not all fully working.|
-|ICARUS-LX150  | A Xilinx LX150 multicore port for ngzhang's Icarus/Lancelot boards.|
-|scripts       | Mining scripts.|
-|source        | Verilog source code.|
+|'DE0-Nano'             |  Uses interpolation as the full scratchpad does not fit (this is the|
+|                       | same as LOOKUP_GAP=2 in GPU). Test results ...|
+|                       | 1.16 kHash/sec at 25Mhz (this is Fmax at 85C/Slow model)|
+|                       | 2.09 kHash/sec at 45Mhz|
+|                       | Fmax is 25MHz, so anything greater may not work reliably on your device.|
+|                       | BEWARE the onboard psu regulators run HOT to VERY HOT. You may fry them!|
+|experimental           | New code, not all fully working.|
+|ICARUS-LX150           | A Xilinx LX150 multicore port for ngzhang's Icarus/Lancelot boards.|
+|scripts                | Mining scripts.|
+|source                 | Verilog source code.|
 
 -----------------------
 
